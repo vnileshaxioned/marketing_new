@@ -107,17 +107,16 @@ li {
 /*=================================
   Custom styling starts here
 =================================*/
-
 :root {
   --black-color: #000;
   --white-color: #fff;
   --underline-color: #CCCCCC;
   --darkgray-color: #616161;
   --footer-color: #F1F1F1;
+  --branding-color: #BBBBBB;
 }
 
 .display-none { display: none; }
-
 /*=================================
   Custom styling ended here
 =================================*/
@@ -125,7 +124,6 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-
 header .wrapper { width: 100%; }
 .hamburger { display: none; }
 
@@ -136,37 +134,36 @@ header .wrapper { width: 100%; }
 }
 
 .menu {
-  text-align: center;
   width: 100%;
+  text-align: center;
 }
 
 .menu-list a {
-  font-size: 23px;
+  padding: 4.5% 0;
   display: block;
   color: var(--black-color);
-  padding: 4.5% 0;
+  font-size: 23px;
 }
 
 .main-title {
   width: 97%;
-  margin: 0 auto;
   padding: 5.3% 0 3.2%;
+  margin: 0 auto;
 }
 
 h1 a {
-  font-size: 48px;
   color: var(--black-color);
+  font-size: 48px;
   font-weight: bold;
 }
 
 .template-by {
-  font-size: 19px;
-  display: block;
   padding-top: 2.4%;
+  display: block;
+  font-size: 19px;
 }
 
 .template-by a { color: var(--black-color); }
-
 /*=================================
   Header styling ends here
 =================================*/  
@@ -176,34 +173,33 @@ h1 a {
 =================================*/
 
 /* banner section started here */
-
 .slider li { width: 100%; }
 figure { position: relative; }
 
 figcaption {
-  position: absolute;
-  right: 1.4%;
-  top: 4.5%;
-  font-size: 20px;
-  background-color: var(--white-color);
   padding: 1.3% 2.3%;
+  position: absolute;
+  top: 4.5%;
+  right: 1.4%;
+  background-color: var(--white-color);
+  font-size: 20px;
 }
 
 .slider-action {
-  background-color: var(--darkgray-color);
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 1.5% 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--darkgray-color);
 }
 
 .slider-action .next-button,
 .slider-action .previous-button {
-  text-indent: -9999px;
-  display: block;
   width: fit-content;
+  display: block;
   color: var(--white-color);
+  text-indent: -9999px;
 }
 
 .previous-button { margin-left: 9%; }
@@ -212,9 +208,9 @@ figcaption {
 .slider-action .next-button::before,
 .slider-action .previous-button::before {
   font-family: 'FontAwesome';
-  text-indent: 0;
   font-size: 29px;
   float: left;
+  text-indent: 0;
 }
 
 .slider-action .previous-button::before { content: '\f0a8'; }
@@ -226,34 +222,32 @@ figcaption {
 }
 
 .dot {
-  font-size: 0;
   padding: 3.3%;
-  margin: 1px;
   border: 1px solid var(--white-color);
+  margin: 1px;
+  font-size: 0;
   transition: background-color .5s ease-in-out;
 }
 
 .slide-active { background-color: var(--white-color); }
-
 /* banner section started here */
 
 /* what we offer section started here */
-
 .what-we-offer { padding: 6.9% 0 7.7%; }
 .offer-box {
-  display: flex;
   padding-top: 4.6%;
+  display: flex;
 }
 
-li.Design { background-color: var(--footer-color); }
-li.Branding { background-color: #BBBBBB; }
+.Design { background-color: var(--footer-color); }
+.Branding { background-color: var(--branding-color); }
 
-li.Consultation {
+.Consultation {
   background-color: #616161;
   color: var(--white-color);
 }
 
-li.Promises {
+.Promises {
   background-color: var(--black-color);
   color: var(--white-color);
 }
@@ -262,32 +256,31 @@ li.Promises {
 .offer-box h3 { font-size: 32px; }
 
 .offer-box p {
+  padding-top: 8%;
   font-size: 19px;
   line-height: 1.5;
-  padding-top: 8%;
 }
-
 /* what we offer section started here */
 
 /* pricing plan section started here */
-
 .pricing-plans p {
-  font-size: 20px;
   padding: 2.1% 0 3.5%;
+  font-size: 20px;
   text-align: center;
 }
 
 .price-card {
+  border: 1px solid #D1D1D1;
+  border-bottom: none;
   display: flex;
   flex-direction: column;
   text-align: center;
-  border: 1px solid #D1D1D1;
 }
 
 .price-card li {
-  border: 1px solid #D1D1D1;
-  line-height: 3.5;
+  border-bottom: 1px solid #D1D1D1;
   font-size: 20px;
+  line-height: 3.5;
 }
 
 .price-card li:last-child {
@@ -302,44 +295,42 @@ li.Promises {
 }
 
 .plans-price {
+  padding-top: 10.8%;
   display: block;
   font-size: 41px;
   letter-spacing: 5px;
   line-height: 1;
-  padding-top: 10.8%;
 }
 
 .signup-button {
-  color: var(--white-color);
-  background-color: #4CAF50;
-  display: initial;
   padding: 4.7% 6.8%;
   border: none;
   outline: none;
+  display: initial;
+  background-color: #4CAF50;
+  color: var(--white-color);
 }
 
 .price-card h4 {
-  font-size: 30px;
   background-color: var(--black-color);
   color: var(--white-color);
-  text-align: center;
+  font-size: 30px;
   line-height: 4.3;
+  text-align: center;
 }
 
 .bold { font-weight: bold; }
 
 .price-pro h4 { background-color: #616161; }
-
 /* pricing plan section ended here */
 
 /* who we are section started here */
-
 .who-we-are {padding: 8.3% 0;}
 
 .outter-box {
+  padding-top: 4.7%;
   display: flex;
   justify-content: space-between;
-  padding-top: 4.7%;
 }
 
 .inner-box { flex-basis: 32.2%; }
@@ -350,40 +341,38 @@ li.Promises {
 .content h5 { font-size: 30px; }
 
 .content span {
-  display: block;
-  font-size: 19px;
-  color: #75727A;
   padding: 8% 0 6.5%;
+  display: block;
+  color: #75727A;
+  font-size: 19px;
 }
 
 .who-we-are p {
-  line-height: 1.5;
   font-size: 19px;
+  line-height: 1.5;
 }
 
 .contact-button {
-  font-size: 20px;
-  color: var(--black-color);
   width: 100%;
-  line-height: 2.6;
   margin-top: 16px;
-  text-align: center;
   background-color: var(--footer-color);
+  color: var(--black-color);
+  font-size: 20px;
+  line-height: 2.6;
+  text-align: center;
 }
-
 /* who we are section started here */
 
 /* contact section started here */
-
 .contact-us { text-align: center; }
 
-.pricing-plans h3,
 .what-we-offer h2,
+.pricing-plans h3,
 .who-we-are h4,
 .contact-us h5 {
-  font-size: 32px;
   width: fit-content;
   margin: 0 auto;
+  font-size: 32px;
 }
 
 .what-we-offer h2::after,
@@ -391,17 +380,17 @@ li.Promises {
 .contact-us h5::after {
   content: '';
   width: auto;
-  display: block;
-  margin-top: 18px;
   padding: 2%;
+  margin-top: 18px;
+  display: block;
   background-color: var(--underline-color);
 }
 
 form { padding: 4% 0 8%; }
 
 .form-group {
-  text-align: left;
   padding-top: 2.5%;
+  text-align: left;
 }
 
 .form-group:last-child { padding-top: 1.6%; }
@@ -413,23 +402,22 @@ label {
 
 .form-content {
   width: 99.5%;
-  line-height: 2.6;
-  font-size: 18px;
   border: 1px solid var(--underline-color);
   outline: none;
+  font-size: 18px;
+  line-height: 2.6;
 }
 
 .send-button {
-  background-color: var(--black-color);
-  color: var(--white-color);
   width: 100%;
-  line-height: 2.5;
-  font-size: 18px;
   border: none;
   outline: none;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-size: 18px;
+  line-height: 2.5;
 }
 /* contact section ended here */
-
 
 /*=================================
   main styling ends here
@@ -438,45 +426,44 @@ label {
 /*=================================
   footer styling starts here
 =================================*/ 
-
 footer {
-  background-color: var(--footer-color);
   padding-top: 4.6%;
+  background-color: var(--footer-color);
   text-align: center;
 }
 
 h6 {
-  font-size: 26px;
   padding-bottom: 2.8%;
+  font-size: 26px;
 }
 
 .rocket-button {
+  padding: 14px 25px;
   background-color: var(--black-color);
   color: var(--white-color);
   font-size: 19px;
-  padding: 14px 25px;
 }
 
 .rocket-button::before {
   content: '\f062';
+  margin-right: 20px;
   font-family: 'FontAwesome';
   float: left;
-  margin-right: 20px;
 }
 
 .social-links { padding-top: 4%; }
 
 .social-icon a {
-  text-indent: -9999px;
   color: var(--black-color);
+  text-indent: -9999px;
 }
 
 .social-icon a::before {
+  margin: 0 1px;
   font-family: 'FontAwesome';
-  text-indent: 0;
   font-size: 29px;
   float: left;
-  margin: 0 1px;
+  text-indent: 0;
 }
 
 .social-icon:nth-child(1) a::before { content: '\f082';}
@@ -487,15 +474,14 @@ h6 {
 .social-icon:nth-child(6) a::before { content: '\f0e1';}
 
 footer p {
-  font-size: 19px;
   padding: 2.7% 0 3.6%;
+  font-size: 19px;
 }
 
 footer p a {
-  text-decoration: underline;
   color: var(--black-color);
+  text-decoration: underline;
 }
-
  /*=================================
   footer styling ends here
 =================================*/ 
@@ -515,9 +501,9 @@ footer p a {
 
   .previous-button:hover::before,
   .next-button:hover::before {
-    color: var(--black-color);
-    background-color: var(--white-color);
     border-radius: 50%;
+    background-color: var(--white-color);
+    color: var(--black-color);
   }
 
   footer p a:hover,
@@ -538,9 +524,7 @@ footer p a {
     color: var(--white-color);
   }
 }
-
 /*media query for hover ended here*/
-
 
 /*media query for 768px starts here*/
 @media only screen and (max-width: 768px) {
@@ -556,9 +540,9 @@ footer p a {
   }
 
   .offer-box {
-    text-align: center;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
   }
 
   .hamburger {
@@ -568,27 +552,28 @@ footer p a {
   
   .hamburger::after {
     content: '\f0c9';
+    margin: 7%;
+    color: var(--black-color);
     font-family: 'FontAwesome';
     font-size: 29px;
-    text-indent: 0;
     float: right;
-    color: var(--black-color);
-    margin: 7%;
+    text-indent: 0;
   }
 
   .hamburger:hover + nav {
+    width: 100%;
     display: block;
     position: fixed;
     top: 0;
-    width: 100%;
-    z-index: 999;
+    z-index: 1;
   }
 
   .menu-list {
     padding: 33% 0;
     flex-direction: column;
   }
-} 
+}
+/*media query for 768px ended here*/
 
 /*media query for 475px starts here*/
 @media only screen and (max-width: 475px) {
@@ -623,16 +608,16 @@ footer p a {
   }
 
   .plans-price {
-    font-size: 26px;
     padding-top: 5.8%;
+    font-size: 26px;
   }
 
   .signup-button { padding: 3.7% 5.8%; }
   .content h5 { font-size: 24px; }
 
   .content span {
-    font-size: 16px;
     padding: 5% 0 4.5%;
+    font-size: 16px;
   }
 
   .form-content {
@@ -643,9 +628,10 @@ footer p a {
   h6 { font-size: 18px; }
 
   .rocket-button {
-    font-size: 14px;
     padding: 12px 23px;
+    font-size: 14px;
   }
 
   .social-icon a::before { font-size: 20px; }
-} 
+}
+/*media query for 475px ended here*/
