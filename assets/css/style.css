@@ -146,11 +146,6 @@ header .wrapper { width: 100%; }
   padding: 4.5% 0;
 }
 
-.menu-list a:hover {
-  background-color: #616161;
-  color: var(--white-color);
-}
-
 .main-title {
   width: 97%;
   margin: 0 auto;
@@ -213,13 +208,6 @@ figcaption {
 .previous-button { margin-left: 9%; }
 .next-button { margin: 0 9% 0 auto; }
 
-.previous-button:hover::before,
-.next-button:hover::before {
-  color: var(--black-color);
-  background-color: var(--white-color);
-  border-radius: 50%;
-}
-
 .slider-action .next-button::before,
 .slider-action .previous-button::before {
   font-family: 'FontAwesome';
@@ -242,10 +230,6 @@ figcaption {
   margin: 1px;
   border: 1px solid var(--white-color);
   transition: background-color .5s ease-in-out;
-}
-
-.dot:hover {
-  background-color: var(--white-color);
 }
 
 .slide-active { background-color: var(--white-color); }
@@ -425,7 +409,7 @@ label {
 }
 
 .form-content {
-  width: 100%;
+  width: 99.5%;
   line-height: 2.6;
   font-size: 18px;
   border: 1px solid var(--underline-color);
@@ -438,6 +422,8 @@ label {
   width: 100%;
   line-height: 2.5;
   font-size: 18px;
+  border: none;
+  outline: none;
 }
 /* contact section ended here */
 
@@ -514,6 +500,47 @@ footer p a {
 =================================*/ 
 
 /*media query starts*/
+
+/*media query for hover starts here*/
+@media only screen and (min-width: 1024px) {
+  .menu-list a:hover {
+    background-color: #616161;
+    color: var(--white-color);
+  }
+
+  .dot:hover {
+    background-color: var(--white-color);
+  }
+
+  .previous-button:hover::before,
+  .next-button:hover::before {
+    color: var(--black-color);
+    background-color: var(--white-color);
+    border-radius: 50%;
+  }
+
+  footer p a:hover,
+  .template-by a:hover {
+    color: var(--darkgray-color);
+  }
+
+  .signup-button:hover { background-color: #2e8831; }
+  .social-icon a:hover { color: var(--darkgray-color); }
+
+  .rocket-button:hover,
+  .send-button:hover {
+    background-color: var(--darkgray-color);
+  }
+
+  .contact-button:hover {
+    background-color: var(--darkgray-color);
+    color: var(--white-color);
+  }
+}
+
+/*media query for hover ended here*/
+
+
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 
