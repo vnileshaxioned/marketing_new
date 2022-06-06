@@ -199,7 +199,11 @@ header .wrapper { width: 100%; }
 
 /* banner section started here */
 .slider li { width: 100%; }
-figure { position: relative; }
+
+.banner .wrapper,
+figure {
+  position: relative;
+}
 
 figcaption {
   padding: 17px 2.5%;
@@ -250,12 +254,25 @@ figcaption {
 .slider-action .next-button::before { content: '\f0a9'; }
 
 .slider-action li {
-  width: 20%;
+  flex-basis: 20%;
   text-align: center;
 }
 
+.slider-dot {
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  display: flex;
+  width: 20%;
+  transform: translateX(-50%);
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-dot li { flex-basis: 8%; }
+
 .dot {
-  padding: 3.3%;
+  padding: 10px;
   border: 1px solid var(--white-color);
   margin: 1px;
   font-size: 0;
@@ -269,8 +286,9 @@ figcaption {
 
 /* what we offer section started here */
 .what-we-offer { padding: 88px 0 98px; }
+
 .offer-box {
-  padding-top: 4.6%;
+  padding-top: 58px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,11 +307,11 @@ figcaption {
   color: var(--white-color);
 }
 
-.offer-box li { padding: 3.2% 1.6%; }
+.offer-box li { padding: 40px 1.6%; }
 .offer-box h3 { font-size: 32px; }
 
 .offer-box p {
-  padding-top: 8%;
+  padding-top: 22px;
   font-size: 19px;
   line-height: 1.5;
 }
@@ -342,7 +360,7 @@ figcaption {
 }
 
 .plans-price {
-  padding-top: 10.8%;
+  padding-top: 42px;
   display: block;
   font-size: 41px;
   letter-spacing: 5px;
