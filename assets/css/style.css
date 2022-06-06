@@ -604,6 +604,7 @@ footer p a {
   }
 
   .hamburger {
+    padding: 0 0 9px;
     display: block;
     text-indent: -9999px;
   }
@@ -618,11 +619,18 @@ footer p a {
     text-indent: 0;
   }
 
-  .hamburger:hover + nav {
+  .nav-menu {
+    position: absolute;
+    top: 40px;
+    right: 3%;
+  }
+
+  .nav-menu:hover nav {
     width: 100%;
     display: block;
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 1;
   }
 
