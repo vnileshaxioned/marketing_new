@@ -592,12 +592,7 @@ footer p a {
     flex-direction: column;
   }
 
-  .contact-us .wrapper,
-  .what-we-offer .wrapper,
-  .pricing-plans .wrapper,
-  .who-we-are .wrapper {
-    width: 70%;
-  }
+  .wrapper-modified { width: 70%; }
 
   .offer-box {
     -ms-flex-wrap: wrap;
@@ -645,28 +640,9 @@ footer p a {
 @media only screen and (max-width: 475px) {
   h1 a { font-size: 36px; }
   .offer-box h3 { font-size: 22px; }
-
-  label,
-  .template-by,
-  .offer-box p {
-    font-size: 16px; 
-  }
-
-  .pricing-plans h3,
-  .what-we-offer h2,
-  .who-we-are h4,
-  .contact-us h5 {
-    font-size: 24px;
-  }
-
-  footer p,
-  .send-button,
-  .contact-button,
-  .who-we-are p,
-  .price-card li,
-  .pricing-plans p {
-    font-size: 14px;
-  }
+  .medium-font { font-size: 16px; }
+  .section-heading { font-size: 24px; }
+  .small-font { font-size: 14px; }
 
   .price-card h4 {
     font-size: 22px;
