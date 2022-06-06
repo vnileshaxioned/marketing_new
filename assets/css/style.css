@@ -83,7 +83,8 @@ sub { bottom: -.25em; }
 
 /*for all*/
 body {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: sans-serif;
 }
 
@@ -107,6 +108,8 @@ li {
 /*=================================
   Custom styling starts here
 =================================*/
+html { scroll-behavior: smooth; }
+
 :root {
   --black-color: #000;
   --white-color: #fff;
@@ -114,6 +117,24 @@ li {
   --darkgray-color: #616161;
   --footer-color: #F1F1F1;
   --branding-color: #BBBBBB;
+  --permonth-color: #9DA7A7;
+}
+
+.section-heading {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 31px;
+}
+
+.underline::after {
+  content: '';
+  width: auto;
+  padding: 2%;
+  margin-top: 18px;
+  display: block;
+  background-color: var(--underline-color);
 }
 
 .display-none { display: none; }
@@ -128,8 +149,12 @@ header .wrapper { width: 100%; }
 .hamburger { display: none; }
 
 .menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: var(--footer-color);
 }
 
@@ -139,10 +164,10 @@ header .wrapper { width: 100%; }
 }
 
 .menu-list a {
-  padding: 4.5% 0;
+  padding: 14px 0;
   display: block;
   color: var(--black-color);
-  font-size: 23px;
+  font-size: 22px;
 }
 
 .main-title {
@@ -151,14 +176,14 @@ header .wrapper { width: 100%; }
   margin: 0 auto;
 }
 
-h1 a {
+.header-logo {
   color: var(--black-color);
   font-size: 48px;
   font-weight: bold;
 }
 
 .template-by {
-  padding-top: 2.4%;
+  padding-top: 26px;
   display: block;
   font-size: 19px;
 }
@@ -177,25 +202,33 @@ h1 a {
 figure { position: relative; }
 
 figcaption {
-  padding: 1.3% 2.3%;
+  padding: 17px 2.5%;
   position: absolute;
-  top: 4.5%;
+  top: 27px;
   right: 1.4%;
   background-color: var(--white-color);
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .slider-action {
   width: 100%;
   padding: 1.5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: var(--darkgray-color);
 }
 
 .slider-action .next-button,
 .slider-action .previous-button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   display: block;
   color: var(--white-color);
@@ -226,6 +259,8 @@ figcaption {
   border: 1px solid var(--white-color);
   margin: 1px;
   font-size: 0;
+  -webkit-transition: background-color .5s ease-in-out;
+  -o-transition: background-color .5s ease-in-out;
   transition: background-color .5s ease-in-out;
 }
 
@@ -233,9 +268,11 @@ figcaption {
 /* banner section started here */
 
 /* what we offer section started here */
-.what-we-offer { padding: 6.9% 0 7.7%; }
+.what-we-offer { padding: 88px 0 98px; }
 .offer-box {
   padding-top: 4.6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -264,7 +301,7 @@ figcaption {
 
 /* pricing plan section started here */
 .pricing-plans p {
-  padding: 2.1% 0 3.5%;
+  padding: 26px 0 44px;
   font-size: 20px;
   text-align: center;
 }
@@ -272,15 +309,20 @@ figcaption {
 .price-card {
   border: 1px solid #D1D1D1;
   border-bottom: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
 
 .price-card li {
   border-bottom: 1px solid #D1D1D1;
-  font-size: 20px;
-  line-height: 3.5;
+  font-size: 19px;
+  line-height: 3.6;
 }
 
 .price-card li:last-child {
@@ -289,8 +331,13 @@ figcaption {
 }
 
 .price-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
 
@@ -302,8 +349,10 @@ figcaption {
   line-height: 1;
 }
 
+.per-month { color: var(--permonth-color); }
+
 .signup-button {
-  padding: 4.7% 6.8%;
+  padding: 18px 28px;
   border: none;
   outline: none;
   display: initial;
@@ -315,7 +364,7 @@ figcaption {
   background-color: var(--black-color);
   color: var(--white-color);
   font-size: 30px;
-  line-height: 4.3;
+  line-height: 4.2;
   text-align: center;
 }
 
@@ -325,23 +374,30 @@ figcaption {
 /* pricing plan section ended here */
 
 /* who we are section started here */
-.who-we-are {padding: 8.3% 0;}
+.who-we-are { padding: 106px 0; }
 
 .outter-box {
-  padding-top: 4.7%;
+  padding-top: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.inner-box { flex-basis: 32.2%; }
+.inner-box { -ms-flex-preferred-size: 32.2%; flex-basis: 32.2%; }
 
-.who-we-are .inner-box { box-shadow: 0px 5px 10px rgba(0, 0, 0, .5); }
+.who-we-are .inner-box {
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+}
 
 .content { padding: 5%; }
 .content h5 { font-size: 30px; }
 
 .content span {
-  padding: 8% 0 6.5%;
+  padding: 30px 0 24px;
   display: block;
   color: #75727A;
   font-size: 19px;
@@ -366,34 +422,14 @@ figcaption {
 /* contact section started here */
 .contact-us { text-align: center; }
 
-.what-we-offer h2,
-.pricing-plans h3,
-.who-we-are h4,
-.contact-us h5 {
-  width: fit-content;
-  margin: 0 auto;
-  font-size: 32px;
-}
-
-.what-we-offer h2::after,
-.who-we-are h4::after,
-.contact-us h5::after {
-  content: '';
-  width: auto;
-  padding: 2%;
-  margin-top: 18px;
-  display: block;
-  background-color: var(--underline-color);
-}
-
-form { padding: 4% 0 8%; }
+form { padding: 60px 0 100px; }
 
 .form-group {
-  padding-top: 2.5%;
+  padding-top: 25px;
   text-align: left;
 }
 
-.form-group:last-child { padding-top: 1.6%; }
+.form-group:last-child { padding-top: 20px; }
 
 label {
   display: block;
@@ -401,11 +437,11 @@ label {
 }
 
 .form-content {
-  width: 99.5%;
+  width: 97.5%;
   border: 1px solid var(--underline-color);
   outline: none;
   font-size: 18px;
-  line-height: 2.6;
+  padding: 14px;
 }
 
 .send-button {
@@ -427,18 +463,18 @@ label {
   footer styling starts here
 =================================*/ 
 footer {
-  padding-top: 4.6%;
+  padding-top: 58px;
   background-color: var(--footer-color);
   text-align: center;
 }
 
 h6 {
-  padding-bottom: 2.8%;
-  font-size: 26px;
+  padding-bottom: 35px;
+  font-size: 25px;
 }
 
 .rocket-button {
-  padding: 14px 25px;
+  padding: 13px 22px;
   background-color: var(--black-color);
   color: var(--white-color);
   font-size: 19px;
@@ -451,7 +487,7 @@ h6 {
   float: left;
 }
 
-.social-links { padding-top: 4%; }
+.social-links { padding-top: 50px; }
 
 .social-icon a {
   color: var(--black-color);
@@ -474,8 +510,8 @@ h6 {
 .social-icon:nth-child(6) a::before { content: '\f0e1';}
 
 footer p {
-  padding: 2.7% 0 3.6%;
-  font-size: 19px;
+  padding: 33px 0 45px;
+  font-size: 18px;
 }
 
 footer p a {
@@ -529,8 +565,14 @@ footer p a {
 /*media query for 768px starts here*/
 @media only screen and (max-width: 768px) {
   nav { display: none; }
-  .outter-box { flex-direction: column; }
   .inner-box { margin-bottom: 3%; }
+
+  .outter-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 
   .contact-us .wrapper,
   .what-we-offer .wrapper,
@@ -540,8 +582,11 @@ footer p a {
   }
 
   .offer-box {
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
   }
 
@@ -570,7 +615,10 @@ footer p a {
 
   .menu-list {
     padding: 33% 0;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*media query for 768px ended here*/
