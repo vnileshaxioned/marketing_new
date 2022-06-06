@@ -127,6 +127,7 @@ li {
 =================================*/
 
 header .wrapper { width: 100%; }
+.hamburger { display: none; }
 
 .menu-list {
   display: flex;
@@ -243,6 +244,7 @@ figcaption {
   display: flex;
   padding-top: 4.6%;
 }
+
 li.Design { background-color: var(--footer-color); }
 li.Branding { background-color: #BBBBBB; }
 
@@ -250,6 +252,7 @@ li.Consultation {
   background-color: #616161;
   color: var(--white-color);
 }
+
 li.Promises {
   background-color: var(--black-color);
   color: var(--white-color);
@@ -259,7 +262,7 @@ li.Promises {
 .offer-box h3 { font-size: 32px; }
 
 .offer-box p {
-  font-size: 20px;
+  font-size: 19px;
   line-height: 1.5;
   padding-top: 8%;
 }
@@ -341,7 +344,7 @@ li.Promises {
 
 .inner-box { flex-basis: 32.2%; }
 
-.who-we-are .inner-box { box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); }
+.who-we-are .inner-box { box-shadow: 0px 5px 10px rgba(0, 0, 0, .5); }
 
 .content { padding: 5%; }
 .content h5 { font-size: 30px; }
@@ -493,8 +496,6 @@ footer p a {
   color: var(--black-color);
 }
 
-
-
  /*=================================
   footer styling ends here
 =================================*/ 
@@ -541,9 +542,110 @@ footer p a {
 /*media query for hover ended here*/
 
 
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+  nav { display: none; }
+  .outter-box { flex-direction: column; }
+  .inner-box { margin-bottom: 3%; }
 
+  .contact-us .wrapper,
+  .what-we-offer .wrapper,
+  .pricing-plans .wrapper,
+  .who-we-are .wrapper {
+    width: 70%;
+  }
 
+  .offer-box {
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-}  
+  .hamburger {
+    display: block;
+    text-indent: -9999px;
+  }
+  
+  .hamburger::after {
+    content: '\f0c9';
+    font-family: 'FontAwesome';
+    font-size: 29px;
+    text-indent: 0;
+    float: right;
+    color: var(--black-color);
+    margin: 7%;
+  }
+
+  .hamburger:hover + nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .menu-list {
+    padding: 33% 0;
+    flex-direction: column;
+  }
+} 
+
+/*media query for 475px starts here*/
+@media only screen and (max-width: 475px) {
+  h1 a { font-size: 36px; }
+  .offer-box h3 { font-size: 22px; }
+
+  label,
+  .template-by,
+  .offer-box p {
+    font-size: 16px; 
+  }
+
+  .pricing-plans h3,
+  .what-we-offer h2,
+  .who-we-are h4,
+  .contact-us h5 {
+    font-size: 24px;
+  }
+
+  footer p,
+  .send-button,
+  .contact-button,
+  .who-we-are p,
+  .price-card li,
+  .pricing-plans p {
+    font-size: 14px;
+  }
+
+  .price-card h4 {
+    font-size: 22px;
+    line-height: 4;
+  }
+
+  .plans-price {
+    font-size: 26px;
+    padding-top: 5.8%;
+  }
+
+  .signup-button { padding: 3.7% 5.8%; }
+  .content h5 { font-size: 24px; }
+
+  .content span {
+    font-size: 16px;
+    padding: 5% 0 4.5%;
+  }
+
+  .form-content {
+    width: 98%;
+    line-height: 2;
+  }
+
+  h6 { font-size: 18px; }
+
+  .rocket-button {
+    font-size: 14px;
+    padding: 12px 23px;
+  }
+
+  .social-icon a::before { font-size: 20px; }
+} 
