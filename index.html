@@ -34,6 +34,7 @@
 
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
   <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->	
   <!--[if lt IE 9]>  
@@ -47,18 +48,211 @@
   <div class="container">
     <!--header section start-->
     <header>
-      
+      <div class="wrapper">
+        <nav>
+          <ul class="menu-list">
+            <li class="menu"><a href="#FIXME" title="Home">Home</a></li>
+            <li class="menu"><a href="#FIXME" title="Plans">Plans</a></li>
+            <li class="menu"><a href="#FIXME" title="About">About</a></li>
+            <li class="menu"><a href="#FIXME" title="Contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="main-title">
+          <h1><a href="./index.html" title="Marketing">MARKETING</a></h1>
+          <span class="template-by">Template by <a href="#FIXME" target="_blank" title="w3.css">w3.css</a></span>
+        </div>
+      </div>
     </header>
     <!--header section start-->
     <!--main section start-->
     <main>
-
+      <div class="banner">
+        <div class="wrapper">
+          <ul class="slider">
+            <li class="display-none">
+              <figure>
+                <img src="https://dummyimage.com/1306x662/9E8B7C/fff.jpg" alt="Slider Image" />
+                <figcaption>Blorum pipsum</figcaption>
+              </figure>
+            </li>
+            <li class="display-none">
+              <figure>
+                <img src="https://dummyimage.com/1306x662/9E8B7C/fff.jpg" alt="Slider Image" />
+                <figcaption>Blorum pipsum</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="https://dummyimage.com/1306x662/9E8B7C/fff.jpg" alt="Slider Image" />
+                <figcaption>Blorum pipsum</figcaption>
+              </figure>
+            </li>
+          </ul>
+          <ul class="slider-action">
+            <li><a href="#FIXME" class="previous-button" title="Previous Slide">prev</a></li>
+            <li>
+              <a href="#FIXME" class="dot" title="First Slide">dot</a>
+              <a href="#FIXME" class="dot" title="Second Slide">dot</a>
+              <a href="#FIXME" class="dot slide-active" title="Third Slide">dot</a>
+            </li>
+            <li><a href="#FIXME" class="next-button" title="Next Slide">next</a></li>
+          </ul>
+        </div>
+      </div>
+      <section class="what-we-offer">
+        <div class="wrapper">
+          <h2>What We Offer</h2>
+          <ul class="offer-box">
+            <li class="Design">
+              <h3>Design</h3>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            </li>
+            <li class="Branding">
+              <h3>Branding</h3>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            </li>
+            <li class="Consultation">
+              <h3>Consultation</h3>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            </li>
+            <li class="Promises">
+              <h3>Promises</h3>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="pricing-plans">
+        <div class="wrapper">
+          <h3>Pricing Plans</h3>
+          <p>Choose a pricing plan that fits your needs.</p>
+          <ul class="outter-box">
+            <li class="inner-box">
+              <ul class="price-card">
+                <li>
+                  <h4>Basic</h4>
+                </li>
+                <li><span class="bold">10GB</span> <span>Storage</span></li>
+                <li><span class="bold">10</span> <span>Emails</span></li>
+                <li><span class="bold">10</span> <span>Domains</span></li>
+                <li><span class="bold">Endless</span> <span>Support</span></li>
+                <li><span class="plans-price">$ 10</span> <span>per month</span></li>
+                <li><a href="#FIXME" class="signup-button" title="Sign Up">Sign Up</a></li>
+              </ul>
+            </li>
+            <li class="inner-box">
+              <ul class="price-card">
+                <li class="price-pro">
+                  <h4>Pro</h4>
+                </li>
+                <li><span class="bold">25GB</span> <span>Storage</span></li>
+                <li><span class="bold">25</span> <span>Emails</span></li>
+                <li><span class="bold">25</span> <span>Domains</span></li>
+                <li><span class="bold">Endless</span> <span>Support</span></li>
+                <li><span class="plans-price">$ 25</span> <span>per month</span></li>
+                <li><a href="#FIXME" class="signup-button" title="Sign Up">Sign Up</a></li>
+              </ul>
+            </li>
+            <li class="inner-box">
+              <ul class="price-card">
+                <li>
+                  <h4>Premium</h4>
+                </li>
+                <li><span class="bold">50GB</span> <span>Storage</span></li>
+                <li><span class="bold">50</span> <span>Emails</span></li>
+                <li><span class="bold">50</span> <span>Domains</span></li>
+                <li><span class="bold">Endless</span> <span>Support</span></li>
+                <li><span class="plans-price">$ 50</span> <span>per month</span></li>
+                <li><a href="#FIXME" class="signup-button" title="Sign Up">Sign Up</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="who-we-are">
+        <div class="wrapper">
+          <h4>Who We Are</h4>
+          <ul class="outter-box">
+            <li class="inner-box">
+              <figure>
+                <img src="https://dummyimage.com/420x280/C0C5BF/fff.jpg" alt="Jane Doe" />
+              </figure>
+              <div class="content">
+                <h5>Jane Doe</h5>
+                <span>CEO & Founder</span>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <a href="#FIXME" class="contact-button" target="_blank" title="Contact">Contact</a>
+              </div>
+            </li>
+            <li class="inner-box">
+              <figure>
+                <img src="https://dummyimage.com/420x280/C0C5BF/fff.jpg" alt="Mike Ross" />
+              </figure>
+              <div class="content">
+                <h5>Mike Ross</h5>
+                <span>Art Director</span>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <a href="#FIXME" class="contact-button" target="_blank" title="Contact">Contact</a>
+              </div>
+            </li>
+            <li class="inner-box">
+              <figure>
+                <img src="https://dummyimage.com/420x280/C0C5BF/fff.jpg" alt="John Doe" />
+              </figure>
+              <div class="content">
+                <h5>John Doe</h5>
+                <span>Designer</span>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <a href="#FIXME" class="contact-button" target="_blank" title="Contact">Contact</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contact-us">
+        <div class="wrapper">
+          <h5>Contact Us</h5>
+          <form action="#FIXME" method="post">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" class="form-content">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" class="form-content">
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-content">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <input type="text" id="message" name="message" class="form-content">
+            </div>
+            <div class="form-group">
+              <input type="submit" class="send-button" name="send" value="Send">
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
     <!--main section end-->
 
     <!--footer section start-->
     <footer>      
-
+      <div class="wrapper">
+        <h6>Footer</h6>
+        <a href="#FIXME" class="rocket-button" title="To The Top">To the top</a>
+        <ul class="social-links">
+          <li class="social-icon"><a href="#FIXME" target="_blank" title="Facebook">facebook</a></li>
+          <li class="social-icon"><a href="#FIXME" target="_blank" title="Instagram">instagram</a></li>
+          <li class="social-icon"><a href="#FIXME" target="_blank" title="Snapchat">snapchat</a></li>
+          <li class="social-icon"><a href="#FIXME" target="_blank" title="Pinterest">pinterest</a></li>
+          <li class="social-icon"><a href="#FIXME" target="_blank" title="Twitter">twitter</a></li>
+          <li class="social-icon"><a href="#FIXME" target="_blank" title="Linkedin">linkedin</a></li>
+        </ul>
+        <p><span>Powered by</span> <a href="#FIXME" target="_blank" title="w3.css">w3.css</a></p>
+      </div>
     </footer>
     <!--footer section end-->
 
